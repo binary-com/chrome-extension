@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://style.binary.com/binary.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="lib/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+    <div id="header" class="primary-color">
+        <a class="logo-parent" href="https://binary.com" target="_blank">
+            <img class="logo-symbol" src="logo/binary-symbol-logo.svg">
+            <img class="logo-text" src="logo/binary-type-logo.svg">
+        </a>
+        <div id="logout"><img src="icons/logout.svg"></div>
+        <div id="account" class="main-account">
+            <div class="account-id"></div>
+            <div>Balance: $<span class="balance"></span></div>
+        </div>
+    </div>
+    <div id="form">
+        <div id="auth-error" class="hidden"></div>
+        <input id="input-token" type="text" placeholder="Token">
+        <label><input id="remember-token" type="checkbox"><span>Remember</span></label>
+        <button id="submit-token">Submit</button>
+        <p><a href="https://www.binary.com/en/user/security/api_tokenws.html">How to Get a Token</a></p>
+    </div>
+    <div id="content">
+        <div id="no-contracts">
+            <h1 class="h1-title">You have no active contracts</h1>
+        </div>
+        <div id="portfolio">
+            <h1>Portfolio</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ref.</th>
+                        <th>Potential payout</th>
+                        <th>Contract details</th>
+                        <th>Purchase</th>
+                        <th>Indicative</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tpl">
+                        <td class="ref"></td>
+                        <td class="payout"><strong></strong></td>
+                        <td class="details"></td>
+                        <td class="purchase"><strong></strong></td>
+                        <td class="indicative"><strong></strong></td>
+                        <td class="link"><a class="button" href="https://binary.com/en/user/portfoliows.html" target="_blank"><span>View</span></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
